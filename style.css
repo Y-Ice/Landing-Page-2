@@ -152,7 +152,7 @@ a{
     /* PRODUCT SECTION */
 
 .product{
-    padding: 50px 10%;
+    padding: 50px 4%;
     position: relative;
     top: -40px;
 }
@@ -196,8 +196,8 @@ a{
     justify-content: space-between;
     align-items: center;
     border-radius: 40px;
-    background-color: rgb(29, 29, 29);
-    box-shadow: inset 0 0 20px gold;
+    background-color: rgb(51, 51, 51);
+    /* box-shadow: 0 0 20px gold; */
     overflow: hidden;
     padding: 20px;
     margin-bottom: 20px;
@@ -205,9 +205,11 @@ a{
 .product .boxes .box{
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    max-width: 350px;
     background-color: rgb(29, 29, 29);
-    box-shadow: inset 0 0 20px gold;
+    /* box-shadow: inset 0 0 20px gold; */
+    border: 2px solid rgba(255, 255, 255, 0.438);
+    padding: 10px;
     margin-bottom: 10px;
     border-radius: 40px;
 }
@@ -239,7 +241,7 @@ a{
     justify-self: center;
     color: white;
     font-size: 16px;
-    padding: 8px;
+    padding: 12px 15px;
     gap: 5px;
     border-radius: 10px;
     background-color: green;

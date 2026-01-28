@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Tete Stitches</title>
+    <link rel="stylesheet" href="login.css">
+        <link rel="shortcut icon" href="assets/logo (3).png" type="image/x-icon">
+</head>
+<body>
+    
+    <form>
+        <h2>Login</h2>
+
+        <label>Username:</label>
+        <input type="text" placeholder="Enter Username" id="username">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter Password" id="password">
+
+        <button type="button" onclick="login()">Log In</button>
+        <!-- <p>Don't have an account yet? <a href="reg.html">Register Here</a></p> -->
+        <p id="error" style="color:red;"></p>
+        <!-- <p><a href="home.html">Skip</a></p> -->
+
+    </form>
+
+
+    <script>
+        function login() {
+            var user = document.getElementById('username').value;
+            var pass = document.getElementById('password').value;
+            if (user == "Lois" && pass == "1234") {
+                window.location.href = "home.html";
+            } else {
+                document.getElementById('error').innerText = "Invalid username or password";
+            }
+        }
+    </script>
+
+</body>
+</html>
